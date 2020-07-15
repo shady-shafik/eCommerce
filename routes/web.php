@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => 'FrontController@index' ]);
 
 Auth::routes();
 
@@ -23,3 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('products', 'ProductsController');
 
+Route::get('product/{id}' , ['uses' => 'FrontController@product'  , 'as' => 'products.product']);

@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Blog Post - Start Bootstrap Template</title>
+  <title>eCommerce</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet">
@@ -20,9 +20,9 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary  border border-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">E-commerce</a>
+      <a class="navbar-brand" href="#">eCommerce</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -50,24 +50,21 @@
   <!-- Page Content -->
   <div class="container my-4">
 
-    <div class="row">
+    <div class="col-10 mx-auto">
 
       <!-- Post Content Column -->
-      <div class="col-12 mx-auto">
 
         @yield('content')
 
-      </div>
-
     </div>
-    <!-- /.row -->
 
   </div>
   <!-- /.container -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="{{asset('js/jquery.min.js')}} "></script>
-  <script src=" {{asset('js/bootstrap.bundle.min.js')}} "></script>
+  <script src=" {{asset('js/bootstrap.min.js')}} "></script>
+
 
 </body>
 
