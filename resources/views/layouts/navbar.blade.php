@@ -10,11 +10,16 @@
 
   <title>eCommerce</title>
 
+  {{-- fontawsome cdn --}}
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
   <link href="{{asset('css/bootstrap.min.css')}} " rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="{{asset('css/blog-post.css')}} " rel="stylesheet">
+
+  <link rel="stylesheet" href="{{asset('css/app.css')}} ">
 </head>
 
 <body>
@@ -50,7 +55,7 @@
   <!-- Page Content -->
   <div class="container my-4">
 
-    <div class="col-10 mx-auto">
+    <div class="col-12 mx-auto">
 
       <!-- Post Content Column -->
 
@@ -64,7 +69,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="{{asset('js/jquery.min.js')}} "></script>
   <script src=" {{asset('js/bootstrap.min.js')}} "></script>
-
+  <script src="{{asset('js/app.js')}} "></script>
 
 </body>
 

@@ -22,3 +22,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('products', 'ProductsController');
 
 Route::get('product/{id}' , ['uses' => 'FrontController@product'  , 'as' => 'products.product']);
+
+Route::resource('cart',  'ShoppingController');
+
+Route::post('cart/add', ['uses' => 'ShoppingController@addToCart' , 'as' => 'cart.add']);
+
+Route::get('cart' , ['uses' => 'ShoppingController@cart' ,  'as' => 'cart']); 
+
+Route::get('cart/delete/{id}' , [
+    'uses' => 'ShoppingController@delete',
+    'as'   => 'cart.delete'
+]);
