@@ -5,7 +5,6 @@
 <h1 class="text-info">Create product</h1>
 
 <form action="{{route('products.store')}} " method="POST" enctype="multipart/form-data">
-        @csrf
     <div class="form-group">
         <label for="name">Product name</label>
         <input type="text" name="name" class="form-control" >
@@ -28,8 +27,7 @@
 
     <div class="form-group">
         <input type="submit" value="Create">
-    </div>
-    
+    </div>    
 </form>
 
 @endsection
