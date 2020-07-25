@@ -33,3 +33,5 @@ Route::get('cart/delete/{id}' , [
     'uses' => 'ShoppingController@delete',
     'as'   => 'cart.delete'
 ]);
+
+
