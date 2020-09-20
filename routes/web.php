@@ -33,6 +33,12 @@ Route::get('cart/delete/{id}' , [
     'uses' => 'ShoppingController@delete',
     'as'   => 'cart.delete'
 ]);
-Route::get('checkout' ,[ 'uses' => 'ShoppingController@checkout' , 'as' => 'cart.checkout' ]); 
+Route::get('checkout' ,[ 
+    'uses' => 'ShoppingController@checkout' ,
+    'as' => 'cart.checkout' 
+    ]); 
 
-
+Route::post('checkout', [
+    'uses' => 'ShoppingController@pay',
+    'as' => 'cart.pay'
+    ]);
